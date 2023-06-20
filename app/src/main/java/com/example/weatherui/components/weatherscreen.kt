@@ -1,6 +1,5 @@
 package com.example.weatherui.components
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -22,5 +21,8 @@ fun MainScreen(padding: PaddingValues){
         Text(text = "Daily Summary", fontWeight = FontWeight.Black, fontSize = 20.sp)
         Text(text = "Now it feels like +25, infact + 28, it feels hot because of the heavy rain. Today The temperature is felt in the range from +22 to+ 28", Modifier.padding(10.dp), fontSize = 16.sp)
         WeatherDetails()
+        Row(){
+            Text(text = "Weakly Forecast")
+        }
     }
 }
